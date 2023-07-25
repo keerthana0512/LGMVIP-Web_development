@@ -24,7 +24,7 @@ function createCard(user) {
 async function getUsers() {
     loader.style.display = "block";
     cardGrid.innerHTML = "";
-    loader.innerHTML = '<div class="loader-spinner"></div><div class="loader-text">Loading...</div>'; // Add loader and text
+    loader.innerHTML = '<div class="loader-spinner"></div><div class="loader-text">Loading...</div>'; 
   
     // Simulate a 10-second loading time
     await new Promise((resolve) => setTimeout(resolve, 5000));
