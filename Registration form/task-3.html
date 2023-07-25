@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrollment Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Enrollment Form</h1>
+    <div class="form-container">
+    <form id="enrollmentForm" class="form">
+      <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" placeholder="Name" >
+      </div>
+
+      <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Email" >
+      </div>
+
+      <div class="form-group">
+      <label for="gender">Gender </label>
+      <select  id="gender" >
+        <option value="">Select gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+      </div>
+
+      <div class="form-group">
+      <label for="courses" >Courses</label>
+      <label for="HTML">
+        <input type="checkbox" id="HTML" name="courses" value="HTML"> HTML
+      </label>
+      <label for="CSS">
+        <input type="checkbox" id="CSS" name="courses" value="CSS"> CSS
+      </label>
+      <label for="Java">
+        <input type="checkbox" id="Java" name="courses" value="Java"> Java
+      </label>
+      </div>
+      
+      <div class="form-group">
+      <label for="imageUrl">Image</label>
+      <input type="url" id="imageUrl" placeholder="Image URL">
+      </div>
+
+      <div class="form-group">
+      <button type="submit">Submit</button>
+      <button type="reset" onclick="clearAll()">Clear</button>
+      </div>
+    </form>
+
+    
+    <div class="data-display" id="dataDisplay">
+    </div>
+  </div>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+</html>
